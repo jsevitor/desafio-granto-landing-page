@@ -1,0 +1,172 @@
+:root {
+  /* COLORS */
+  --primary: #4510a3;
+  --secondary: #0cd2ab;
+  --dark: #323232;
+  --neutral: #f9f9f9;
+  --whithe: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  color: var(--dark);
+}
+
+/* COMMUNS */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+button {
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 80px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  color: var(--whithe);
+
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  position: fixed;
+  top: 2rem;
+  z-index: 999;
+}
+
+.header .menu-items {
+  display: flex;
+  gap: 3rem;
+  font-size: 20px;
+}
+
+.header button {
+  background-color: var(--secondary);
+  color: var(--whithe);
+}
+
+/* HERO */
+.hero-content {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.hero-content .left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-content .left-container .hero-title {
+  width: 80%;
+}
+
+.hero-content .rigth-container {
+  display: flex;
+  justify-content: end;
+}
+
+.hero-content button {
+  background-color: var(--primary);
+  color: var(--whithe);
+}
+
+/* INFO */
+.info {
+  height: 180px;
+  background-color: var(--neutral);
+}
+
+.info .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* WHAT IS */
+.what-is {
+  color: var(--whithe);
+  background-color: var(--primary);
+}
+
+.what-is .container {
+  display: flex;
+  align-items: center;
+}
+
+.what-is img {
+  position: relative;
+  top: -3rem;
+}
+
+/* WHO USES */
+.who-uses .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.who-uses p {
+  width: 80%;
+}
