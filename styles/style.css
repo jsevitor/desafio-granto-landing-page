@@ -41,7 +41,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 h1 {
@@ -106,13 +106,14 @@ h4 {
 /* HERO */
 .hero-content {
   display: flex;
-  align-items: center;
-  height: calc(100vh - 80px);
+  /* align-items: center; */
+  height: calc(100vh - 260px);
 }
 
 .hero-content .left-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -120,9 +121,13 @@ h4 {
   width: 80%;
 }
 
-.hero-content .rigth-container {
+.hero-content .right-container {
   display: flex;
-  justify-content: end;
+  align-items: end;
+}
+
+.hero-content .rigth-container {
+  width: 100%;
 }
 
 .hero-content button {
@@ -211,7 +216,6 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 6rem;
 }
 
 .simple-articles article h3 {
@@ -233,5 +237,79 @@ h4 {
 /* BLOG */
 .blog .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.blog .section-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog .container h2 {
+  font-size: 48px;
+}
+
+.blog .blog-articles {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.blog .blog-articles article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog .blog-articles h4 {
+  font-size: 20px;
+}
+
+.blog button {
+  margin-top: 1rem;
+  background-color: var(--primary);
+  color: var(--whithe);
+}
+
+/* FOOTER */
+.footer .container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.footer .container .company-info {
+  flex: 1;
+  width: 21%;
+  margin-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer .address p {
+  font-size: 14px;
+}
+
+.footer .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .social-media i {
+  font-size: 28px;
+}
+
+.footer .container .footer-menu {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .container .footer-menu h4 {
+  padding-top: 60px;
 }
