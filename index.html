@@ -22,30 +22,46 @@
   </head>
   <body>
     <main>
-      <section class="hero">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
         <div class="container">
+          <div class="top-container"></div>
+
+          <!-- HEADER -->
           <header class="header">
-            <div class="logo">
-              <img src="assets/logo.svg" alt="logo" />
-            </div>
-            <nav class="menu">
+            <picture class="header-logo">
+              <source media="(max-width: 768px)" srcset="assets/logo-g.png" />
+              <img src="assets/logo.svg" />
+            </picture>
+
+            <nav class="header-menu">
               <ul class="menu-items">
                 <li class="items">Seguros</li>
-                <li class="items">Blog</li>
-                <li class="items">Trabalhe conosco</li>
+                <li class="items">
+                  <a href="https://grantoseguros.com/blog/">Blog</a>
+                </li>
+                <li class="items">
+                  <a href="https://grantoseguros.com/trabalhe-conosco/"
+                    >Trabalhe conosco</a
+                  >
+                </li>
               </ul>
             </nav>
-            <div class="action-btn">
-              <button>Falar agora</button>
+            <div>
+              <button class="cta-button">Falar agora</button>
+            </div>
+            <div class="header-hamburger-menu">
+              <i class="bi bi-list"></i>
             </div>
           </header>
 
+          <!-- HERO -->
           <div class="hero-content">
-            <article class="left-container">
-              <div class="quick-menu">
-                <a href="#">Paginal Inicial</a>
-                <span>></span>
-                <a href="#">Seguro Garantia Executante</a>
+            <article class="hero-left-container">
+              <div class="hero-breadcrumb">
+                <div><a href="#">Paginal Inicial</a></div>
+                <div><i class="bi bi-chevron-right"></i></div>
+                <div><a href="#">Seguro Garantia Executante</a></div>
               </div>
               <div class="hero-title">
                 <h1>
@@ -53,18 +69,19 @@
                   essa tarefa com facilidade.
                 </h1>
               </div>
-              <div class="action-btn">
-                <button>Conheça o Produto</button>
+              <div>
+                <button class="cta-button">Conheça o Produto</button>
               </div>
             </article>
-            <article class="right-container">
+            <article class="hero-right-container">
               <img src="assets/woman.svg" alt="woman-holding-laptop" />
             </article>
           </div>
         </div>
       </section>
 
-      <section class="info">
+      <!-- STATS SECTION -->
+      <section class="stats-section">
         <div class="container">
           <div>
             <p>
@@ -78,9 +95,10 @@
         </div>
       </section>
 
-      <section class="what-is">
+      <!-- ABOUT SECTION -->
+      <section class="about-section">
         <div class="container">
-          <div>
+          <div class="about-imagem">
             <img src="assets/searching.svg" alt="searching" />
           </div>
           <article>
@@ -96,9 +114,10 @@
         </div>
       </section>
 
-      <section class="who-uses">
+      <!-- USAGE SECTION -->
+      <section class="usage-section">
         <div class="container">
-          <div>
+          <div class="usage-imagem">
             <img src="assets/puzzle.svg" alt="puzzle" />
           </div>
           <article>
@@ -113,7 +132,8 @@
         </div>
       </section>
 
-      <section class="when-use">
+      <!-- APPLICATION SECTION -->
+      <section class="application-section">
         <div class="container">
           <div>
             <img src="assets/chat.svg" alt="chat" />
@@ -131,17 +151,18 @@
               obcaecati? Quia veritatis vitae atque ut architecto, impedit
               adipisci deserunt enim porro blanditiis.
             </p>
-            <div class="action-btn">
+            <div class="cta-button">
               <button>Falar agora</button>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="how-simple">
+      <!-- STEPS -->
+      <section class="steps-setction">
         <div class="container">
           <h2>Veja como é simples</h2>
-          <div class="simple-articles">
+          <div class="steps-articles">
             <article>
               <h3>1</h3>
               <h4>Envie os documentos</h4>
@@ -167,20 +188,13 @@
               </p>
             </article>
           </div>
-          <!-- <div class="questions">
-            <h2>Perguntas Frequentes</h2>
-            <p>Como enviar meus documentos para análise?</p>
-            <p>Quais tipos de documentos são suportados?</p>
-            <p>Quanto tempo leva para analisar um documento?</p>
-            <p>Como os dados extraídos são apresentados?</p>
-            <p>Como posso acessar suporte técnico?</p>
-          </div> -->
         </div>
       </section>
 
-      <section class="blog">
+      <!-- BLOG SECTION -->
+      <section class="blog-section">
         <div class="container">
-          <div class="section-titles">
+          <div class="blog-section-titles">
             <span class="highlight">BLOG GRANTO</span>
             <h2>Confira nossos conteúdos</h2>
           </div>
@@ -203,29 +217,30 @@
               <p>18 de abril de 2024</p>
             </article>
           </div>
-          <div class="action-btn">
-            <button>Ver mais artigos</button>
+          <div>
+            <button class="cta-button">Ver mais artigos</button>
           </div>
         </div>
       </section>
 
+      <!-- FOOTER -->
       <footer class="footer">
         <div class="container">
-          <div class="company-info">
-            <div class="logo-stamp">
+          <div class="footer-company-info">
+            <div class="footer-logos">
               <img src="assets/logo-black.svg" alt="" />
               <img src="assets/stamp.svg" alt="" />
             </div>
-            <div class="address">
+            <div class="footer-address">
               <p>
                 Rua Major Eustáquio, 76. Condomínio Conjunto Chapadão, 503.
                 Centro, Uberaba – MG.
               </p>
             </div>
-            <div class="phone">
+            <div class="footer-phone">
               <h4>(34) 3316-8055</h4>
             </div>
-            <div class="social-media">
+            <div class="footer-social-media">
               <i class="bi bi-facebook"></i>
               <i class="bi bi-whatsapp"></i>
               <i class="bi bi-youtube"></i>
@@ -234,7 +249,7 @@
             </div>
           </div>
           <div class="footer-menu">
-            <div class="nav-menu">
+            <div class="footer-menu-item">
               <h4>Seguro garantia</h4>
               <ul>
                 <li>Execução de contratos</li>
@@ -244,7 +259,7 @@
                 <li>Processos judiciais</li>
               </ul>
             </div>
-            <div class="nav-menu">
+            <div class="footer-menu-item">
               <h4>Outros seguros</h4>
               <ul>
                 <li>Vida em grupo</li>
@@ -252,7 +267,7 @@
                 <li>Responsabilidade civil</li>
               </ul>
             </div>
-            <div class="nav-menu">
+            <div class="footer-menu-item">
               <h4>Granto</h4>
               <ul>
                 <li>Carreiras</li>
@@ -260,9 +275,11 @@
                 <li>Blog</li>
               </ul>
             </div>
-            <div class="nav-menu">
+            <div class="footer-menu-item">
               <h4>Legal</h4>
-              <p>Politica de privacidade</p>
+              <ul>
+                <li>Politica de privacidade</li>
+              </ul>
             </div>
           </div>
         </div>
