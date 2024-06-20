@@ -2,8 +2,9 @@
   /* COLORS */
   --primary: #4510a3;
   --secondary: #0cd2ab;
-  --dark: #323232;
   --neutral: #f9f9f9;
+  --lightDark: #707070;
+  --dark: #323232;
   --whithe: #ffffff;
 }
 
@@ -86,11 +87,6 @@ h4 {
   background-color: var(--primary);
   border-radius: 1rem;
   color: var(--whithe);
-
-  /* flex-basis: auto;
-  flex-grow: 1;
-  flex-shrink: 1; */
-
   position: fixed;
   top: 1.5rem;
   z-index: 999;
@@ -104,10 +100,60 @@ h4 {
   color: var(--secondary);
 }
 
-.menu-items {
+.header-menu-items {
   display: flex;
   gap: 3rem;
   font-size: 1.25rem;
+}
+
+.header-menu-item li:first-child i {
+  font-size: 12px;
+}
+
+.header-submenu {
+  /* display: none; */
+  width: auto;
+  margin-left: 0px;
+  margin-top: 0px;
+  min-width: 12rem;
+  max-width: 1000px;
+  background-color: var(--neutral);
+  border-radius: 0.8rem;
+  position: absolute;
+  top: 65px;
+  left: 250px;
+}
+
+.header-submenu li {
+  padding: 0.5rem 0;
+}
+
+.header-submenu li:hover {
+  background-color: var(--secondary);
+  color: var(--whithe);
+}
+
+.header-submenu li a:hover {
+  color: var(--whithe);
+}
+
+.header-submenu li:first-child:hover {
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.header-submenu li:last-child:hover {
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.header-submenu li > a {
+  display: flex;
+  width: 100%;
+  font-size: 0.813rem;
+  color: var(--lightDark);
+  padding: 0.625rem 1.25rem;
+  flex: 1;
 }
 
 .header button {
@@ -346,9 +392,9 @@ h4 {
 
   /* HEADER */
   .header {
-    width: 100%;
+    width: 90%;
     padding: 0.5rem 2rem;
-    margin: 0 auto;
+    left: 5%;
   }
 
   .header-logo img {
@@ -417,7 +463,6 @@ h4 {
     align-items: center;
   }
 
-  /* ABOUT SECTION */
   .about-section .container,
   .application-section .container,
   .steps-setction .container,
@@ -428,6 +473,7 @@ h4 {
     padding: 2.5rem 2rem;
   }
 
+  /* ABOUT SECTION */
   .about-imagem,
   .usage-imagem {
     text-align: center;
@@ -458,13 +504,17 @@ h4 {
     justify-content: center;
   }
 
-  /* BLOG */
+  /* BLOG SECTION*/
   .blog-section-titles h2 {
     font-size: 2rem;
   }
 
   .blog-articles {
-    padding: 0 4rem;
+    padding: 0 1rem;
+  }
+
+  .blog-articles img {
+    width: 100%;
   }
 
   /* FOOTER */
