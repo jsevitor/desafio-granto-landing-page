@@ -30,15 +30,19 @@
           <!-- HEADER -->
           <header class="header">
             <picture class="header-logo">
-              <source media="(max-width: 768px)" srcset="assets/logo-g.png" />
-              <img src="assets/logo.svg" />
+              <a href="https://grantoseguros.com/">
+                <source media="(max-width: 768px)" srcset="assets/logo-g.png" />
+                <img src="assets/logo.svg" />
+              </a>
             </picture>
 
             <nav class="header-menu">
               <ul class="header-menu-items">
-                <li class="header-menu-item">
-                  Seguros
-                  <i class="bi bi-caret-down-fill"></i>
+                <li class="header-menu-item" id="dropdown-menu">
+                  <a>
+                    Seguros
+                    <i class="bi bi-caret-down-fill"></i>
+                  </a>
                   <ul class="header-submenu">
                     <li class="header-submenu-item submenu-item-1">
                       <a
@@ -71,10 +75,14 @@
                   </ul>
                 </li>
                 <li class="header-menu-item">
-                  <a href="https://grantoseguros.com/blog/">Blog</a>
+                  <a href="https://grantoseguros.com/blog/" target="_blank"
+                    >Blog</a
+                  >
                 </li>
                 <li class="header-menu-item">
-                  <a href="https://grantoseguros.com/trabalhe-conosco/"
+                  <a
+                    href="https://grantoseguros.com/trabalhe-conosco/"
+                    target="_blank"
                     >Trabalhe conosco</a
                   >
                 </li>
@@ -92,7 +100,9 @@
           <div class="hero-content">
             <article class="hero-left-container">
               <div class="hero-breadcrumb">
-                <div><a href="#">Paginal Inicial</a></div>
+                <div>
+                  <a href="https://grantoseguros.com/">Paginal Inicial</a>
+                </div>
                 <div><i class="bi bi-chevron-right"></i></div>
                 <div><a href="#">Seguro Garantia Executante</a></div>
               </div>
@@ -271,14 +281,30 @@
               </p>
             </div>
             <div class="footer-phone">
-              <h4>(34) 3316-8055</h4>
+              <a href="tel:+553433168055">
+                <h4>(34) 3316-8055</h4>
+              </a>
             </div>
             <div class="footer-social-media">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-whatsapp"></i>
-              <i class="bi bi-youtube"></i>
-              <i class="bi bi-linkedin"></i>
-              <i class="bi bi-instagram"></i>
+              <a href="https://www.facebook.com/grantoseguros" target="_blank"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=553433168055&text&type=phone_number&app_absent=0"
+                target="_blank"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a href="https://www.youtube.com/@grantoseguros" target="_blank"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/granto-seguros/mycompany/"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/grantoseguros/" target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
             </div>
           </div>
           <div class="footer-menu">
@@ -318,5 +344,8 @@
         </div>
       </footer>
     </main>
+
+    <!-- SCRIPTS -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -27,6 +27,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--dark);
 }
 
 button {
@@ -94,6 +95,7 @@ h4 {
 
 .header-menu a {
   color: var(--whithe);
+  cursor: pointer;
 }
 
 .header-menu a:hover {
@@ -106,12 +108,12 @@ h4 {
   font-size: 1.25rem;
 }
 
-.header-menu-item li:first-child i {
+.header-menu-item .bi-caret-down-fill {
   font-size: 12px;
 }
 
 .header-submenu {
-  /* display: none; */
+  display: none;
   width: auto;
   margin-left: 0px;
   margin-top: 0px;
@@ -121,7 +123,11 @@ h4 {
   border-radius: 0.8rem;
   position: absolute;
   top: 65px;
-  left: 250px;
+  left: 28%;
+}
+
+.header-submenu.visible {
+  display: block;
 }
 
 .header-submenu li {
