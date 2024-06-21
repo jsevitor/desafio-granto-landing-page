@@ -115,8 +115,6 @@ h4 {
 .header-submenu {
   display: none;
   width: auto;
-  margin-left: 0px;
-  margin-top: 0px;
   min-width: 12rem;
   max-width: 1000px;
   background-color: var(--neutral);
@@ -124,6 +122,7 @@ h4 {
   position: absolute;
   top: 65px;
   left: 28%;
+  z-index: 700;
 }
 
 .header-submenu.visible {
@@ -408,13 +407,68 @@ h4 {
   }
 
   .header-menu {
-    display: none;
+    width: 100%;
+
+    min-width: 12rem;
+    max-width: 1000px;
+    background-color: var(--neutral);
+    border-radius: 0.8rem;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+
+  .header-menu a {
+    color: var(--dark);
   }
 
   .header-menu.active {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .header-menu-items {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header-menu-items.visible {
+    display: block;
+  }
+
+  .header-menu-items li {
+    padding: 1rem 2rem;
+  }
+
+  .header-menu-items li:hover {
+    background-color: var(--secondary);
+    color: var(--whithe);
+    cursor: pointer;
+  }
+
+  .header-menu-items li a:hover {
+    color: var(--whithe);
+  }
+
+  .header-menu-items li:first-child:hover {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+
+  .header-menu-items li:last-child:hover {
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+  }
+
+  .header-submenu {
+    position: unset;
+    /* background: none; */
+  }
+
+  .header-submenu li {
+    padding: 0;
   }
 
   .header-hamburger-menu {
