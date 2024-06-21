@@ -15,11 +15,10 @@ const toggleMenu = () => {
   let btn = document.querySelector("#btn-menu");
   let headerMenu = document.querySelector(".header-menu-items");
 
- 
-    btn.addEventListener("click", () => {
-      headerMenu.classList.toggle("visible");
-    });
-}
+  btn.addEventListener("click", () => {
+    headerMenu.classList.toggle("visible");
+  });
+};
 
 function main() {
   toggleSubMenu();

@@ -81,15 +81,16 @@ h4 {
 .header {
   width: 100%;
   max-width: 1240px;
+  height: 5.3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   background-color: var(--primary);
   border-radius: 1rem;
   color: var(--whithe);
   position: fixed;
-  top: 1.5rem;
+  top: 1.2rem;
   z-index: 999;
 }
 
@@ -104,7 +105,7 @@ h4 {
 
 .header-menu-items {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   font-size: 1.25rem;
 }
 
@@ -120,7 +121,7 @@ h4 {
   background-color: var(--neutral);
   border-radius: 0.8rem;
   position: absolute;
-  top: 65px;
+  top: 4rem;
   left: 28%;
   z-index: 700;
 }
@@ -136,6 +137,7 @@ h4 {
 .header-submenu li:hover {
   background-color: var(--secondary);
   color: var(--whithe);
+  box-sizing: unset;
 }
 
 .header-submenu li a:hover {
@@ -210,14 +212,23 @@ h4 {
 /* STATS SECTION */
 .stats-section {
   height: 180px;
-  background-color: var(--neutral);
+  background-color: #f9f9f9;
 }
-
 .stats-section .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  height: 100%;
+}
+.stats-section .highlight {
+  font-size: 22px;
+}
+.stats-section .stats-icons {
+  display: flex;
+  gap: 3rem;
+  font-size: 30px;
+  color: #4510a3;
 }
 
 /* ABOUT SECTION */
@@ -414,18 +425,12 @@ h4 {
     background-color: var(--neutral);
     border-radius: 0.8rem;
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     left: 0;
   }
 
   .header-menu a {
     color: var(--dark);
-  }
-
-  .header-menu.active {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
   }
 
   .header-menu-items {
@@ -462,13 +467,27 @@ h4 {
     border-bottom-right-radius: 0.8rem;
   }
 
+  .header-menu-items .menu-item-submenu {
+    padding: 0;
+  }
+
   .header-submenu {
     position: unset;
-    /* background: none; */
+    border-radius: 0;
   }
 
   .header-submenu li {
     padding: 0;
+  }
+
+  .header-submenu li > a {
+    padding: 0.625rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .header-submenu li:first-child:hover,
+  .header-submenu li:last-child:hover {
+    border-radius: 0;
   }
 
   .header-hamburger-menu {
@@ -531,6 +550,13 @@ h4 {
     gap: 2rem;
     height: auto;
     padding: 2.5rem 2rem;
+  }
+
+  /* STATS SECTION */
+  .stats-section .container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
   }
 
   /* ABOUT SECTION */
