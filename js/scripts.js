@@ -17,6 +17,14 @@ const toggleMenu = () => {
 
   btn.addEventListener("click", () => {
     headerMenu.classList.toggle("visible");
+
+    if (btn.classList.contains("bi-list")) {
+      btn.classList.remove("bi-list");
+      btn.classList.add("bi-x");
+    } else {
+      btn.classList.remove("bi-x");
+      btn.classList.add("bi-list");
+    }
   });
 };
 
