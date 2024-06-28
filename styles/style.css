@@ -382,9 +382,16 @@ h4 {
 }
 
 .footer-menu {
-  flex: 2;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-menu-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-grow: 1;
 }
 
 .footer-menu-item h4 {
@@ -399,7 +406,7 @@ h4 {
   padding-top: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html {
     font-size: 80%;
   }
@@ -644,7 +651,7 @@ h4 {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1100px) {
   .blog-articles {
     display: flex;
     flex-direction: column;
@@ -652,6 +659,25 @@ h4 {
   }
 
   .footer-company-info {
-    width: 10.75rem;
+    width: 21%;
+  }
+
+  .footer-logos {
+    display: flex;
+  }
+
+  .footer-logos img {
+    width: 50%;
+  }
+
+  .footer-phone h4 {
+    font-size: 1rem;
+  }
+
+  .footer-menu {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: auto;
   }
 }
