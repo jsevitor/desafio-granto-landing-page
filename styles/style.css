@@ -177,6 +177,7 @@ h4 {
 /* HERO */
 .hero-content {
   display: flex;
+  height: 60vh;
 }
 
 .hero-left-container {
@@ -201,12 +202,13 @@ h4 {
 
 .hero-right-container {
   display: flex;
-  align-items: end;
+  align-items: center;
   width: 100%;
 }
 
 .hero-right-container img {
   width: 100%;
+  margin: 2rem 0;
 }
 
 .hero-content button {
@@ -365,7 +367,7 @@ h4 {
 }
 
 .footer-company-info {
-  width: 23.75rem;
+  width: 22rem;
   margin-right: 6rem;
   display: flex;
   flex-direction: column;
@@ -389,13 +391,14 @@ h4 {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  width: 100%;
 }
 
 .footer-menu-item {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  flex-grow: 1;
+  /* flex: 1;
+  flex-grow: 1; */
 }
 
 .footer-menu-item h4 {
@@ -520,6 +523,7 @@ h4 {
     align-items: center;
     gap: 2rem;
     padding: 2rem 2rem 0 2rem;
+    height: auto;
   }
   .hero-breadcrumb a {
     font-size: 0.88rem;
