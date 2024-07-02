@@ -177,7 +177,7 @@ h4 {
 /* HERO */
 .hero-content {
   display: flex;
-  height: 60vh;
+  height: 55vh;
 }
 
 .hero-left-container {
@@ -185,10 +185,12 @@ h4 {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  flex: 1;
 }
 
-.hero-title {
-  width: 80%;
+.hero-title h1 {
+  /* width: 80%; */
+  margin-bottom: 2rem;
 }
 
 .hero-breadcrumb {
@@ -202,13 +204,13 @@ h4 {
 
 .hero-right-container {
   display: flex;
-  align-items: center;
-  width: 100%;
+  justify-content: center;
+  align-items: end;
+  flex: 1;
 }
 
 .hero-right-container img {
-  width: 100%;
-  margin: 2rem 0;
+  /* width: 100%; */
 }
 
 .hero-content button {
@@ -295,11 +297,12 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 100px 0;
+  padding: 4rem 0;
 }
 
 .steps-articles {
   display: flex;
+  gap: 1.5rem;
 }
 
 .steps-articles article {
@@ -313,7 +316,32 @@ h4 {
   color: var(--primary);
 }
 
-/* BLOG */
+.steps-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 4rem;
+}
+
+.formats-icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.formats-icons i {
+  font-size: 4rem;
+  color: var(--lightDark);
+  opacity: 0.7;
+}
+
+/* BLOG SECTION */
 .blog-section .container {
   display: flex;
   flex-direction: column;
@@ -349,11 +377,20 @@ h4 {
   width: 100%;
 }
 
+.blog-articles article img:hover {
+  opacity: 0.9;
+}
+
+.blog-articles article p {
+  color: var(--lightDark);
+  opacity: 0.6;
+}
+
 .blog-articles h4 {
   font-size: 1.25rem;
 }
 
-.blog button {
+.blog-section button {
   margin-top: 1rem;
   background-color: var(--primary);
   color: var(--whithe);
@@ -660,6 +697,19 @@ h4 {
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
+  html {
+    font-size: 70%;
+  }
+
+  .hero-title h1 {
+    font-size: 28px;
+  }
+
+  .about-section .container {
+    gap: 4rem;
+    height: fit-content;
+  }
+
   .blog-articles {
     display: flex;
     flex-direction: column;
